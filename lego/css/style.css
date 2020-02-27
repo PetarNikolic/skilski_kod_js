@@ -1,0 +1,152 @@
+/*Zvezdicom smo obelezili celokupan sadrzaj*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Definisali smo uzglavlje*/
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-image: url('../images/lego_pizza.jpg');
+    background-position-y: center;
+    height: 150px; 
+    z-index: 1;
+    margin-top: 45px;
+}
+header p{
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+}
+#par1{
+    bottom: 0;
+    right: 0;
+}
+#par2{
+    bottom: 0;
+    left: 0;
+}
+#par3{
+    top: 0;
+    right: 0;
+}
+#par4{
+    top: 0;
+    left: 0;
+}
+#par5{
+    top: 40px;
+    text-align: center;
+    width: 100%;
+}
+#naslov{
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+   /* left: 35%;
+    bottom: 40%;*/
+}
+.topbar{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    background-color: #303030;
+    overflow: hidden;
+}
+nav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+/*nav ul::after, u komvinaciji sa nav li, sluzi za prikazivanje meija*/
+nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+/*nav li a, uredili smo linkove u meniu*/
+nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    border-right: 2px solid #bababa;
+}
+/* nav li a:hover-om smo definisali pozadinsku boju i velicinu fonta menija*/
+nav li a:hover{
+    background-color: red;
+    font-weight: bold;
+}
+/*klasu podmeni smo iskoristili za definisanje tog menija, poziciju, nivo z dimenzije, width(sirina), dsipaly none da ostavi podrazumevano stanje*/
+.podmeni{
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    background-color: #303030;
+    display: none;
+}
+/*dropdown klasu smo iskoristili za efekat hover, da se prikaze podmeni, koji je skriven unutar satisfaed customers*/
+.dropdown:hover .podmeni{
+    display: block;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#slika1{
+    position: relative;
+    right: 100px;
+    bottom: 50px;
+}
+
+#div{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+    left: 200px;
+}
+
+#slika2{
+    position: absolute;
+    left: 18%;
+    top: 17%;
+}
+#slika3{
+    visibility: hidden;
+}
+/*definisanje elementa aside*/
+aside{
+    float: left;
+    clear: left;
+    width: 20%;
+}
+/*definisali smo element section*/
+section{
+    float: right;
+    clear: right;
+    width: 75%;
+}
+/*definisanje slika tj. divova unutar sectiona*/
+.column{
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+section::after, .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}

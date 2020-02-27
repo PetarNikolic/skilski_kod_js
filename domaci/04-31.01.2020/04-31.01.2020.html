@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Responsive Forma</title>
+		<link rel="stylesheet" href="04-31.01.2020.css">
+		<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	</head>
+
+	<body>
+		<h1>Responsive forma</h1>
+		<p>Promenite sirinu prozora kako biste videli efekat forme. Kada je ekran manji od 600px, formu kreirati tako da se njeni elementi nalaze jedni ispod drugih.</p>
+		<form>
+			<fieldset>
+			<!--Ime i prezime-->
+				<div class="row">
+					<label class="col-4">Ime i prezime</label>
+					<input class="col-8" type="text" placeholder="Unesite svoje ime i prezime">
+				</div>
+
+		<!--Pretrazivac-->
+				<div class="row">
+					<label class="col-4">Pretrazite</label>
+					<input class="col-8" id="pretraga" type="search" placeholder="Pretrazite">
+				</div>
+		<!--Zemlja-->
+				<div class="row">
+					<label class="col-4">Zemlja</label>
+					<select class="col-8" name="Zemlja">
+						<option value="it">Italija</option>
+						<option value="fr">Francuska</option>
+						<option value="sk">Slovacka</option>
+					</select>
+				</div>
+		<!--Unos veceg teksta-->
+				<div class="row">
+					<label class="col-4">Opis</label>
+					<textarea class="col-8" rows="5" cols="10" placeholder="Napisite neki opis.."></textarea>
+				</div>
+		<!--Dugme za potvrdu-->
+				<div class="row">
+						<input class="col-2 button" type="submit" value="Potvrdite" onclick="alert('Hvala! :)')">
+				</div>
+			</fieldset>
+		</form>
+
+
+	</body>
+
+
+
+
+</html>

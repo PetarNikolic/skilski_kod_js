@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Gadget, sans-serif;
+    font-size: 20px;
+}
+a{
+    display: inline;
+    color: black;
+    text-decoration: none;
+    padding: 10px 40px 10px;
+    font-family: 'ArialBlack', Gadget, sans-serif;
+    font-size: 180%;
+}
+a:hover{
+    background-color: orange;
+}
+img{
+    display: inline;
+    width: 180px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    display: inline;
+    width: 25px;
+}
+table, th, td{
+    text-align: center;
+}
+.grad{
+    color: orange;
+}
+.qa{
+    color: green;
+}
+#fondacija{
+    color: orange;
+}
+#link{
+ color: green;   
+}
+#link:active{
+    color: blue;
+    background-color: gray;
+}
