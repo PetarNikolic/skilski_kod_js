@@ -27,3 +27,4 @@ blog['title'] = 'Moj prvi blog!!!';
 console.log(blog);
 
 console.log("Test poruka");
+console.log("Druga test poruka");
